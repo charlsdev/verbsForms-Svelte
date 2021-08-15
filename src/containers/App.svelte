@@ -8,7 +8,8 @@
 	let dataVerbs;
 
 	const listVerbs = async () => {
-		const response = await fetch('http://localhost:2021/listVerbs');
+		// const response = await fetch('http://localhost:2021/listVerbs');
+		const response = await fetch('https://api-verbs.herokuapp.com/listVerbs');
 		dataVerbs = await response.json();
 		// console.log(dataVerbs);
 	}
