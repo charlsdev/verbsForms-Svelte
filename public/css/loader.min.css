@@ -1,0 +1,87 @@
+@import url('Poppins_letter.css');
+
+*,
+::before,
+::after {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif !important;
+}
+
+.loader-wrapper {
+   position: fixed;
+   z-index: 9999;
+   background: var(--blanco);
+   left: 0px;
+   top: 0px;
+   width: 100%;
+   height: 100%;
+}
+
+.loader-wrapper {
+   left: 0px;
+   top: 0px;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.loading {
+   width: 200px;
+   height: 200px;
+   box-sizing: border-box;
+   border-radius: 50%;
+   border-top: 10px solid var(--morado);
+   position: relative;
+   animation: a1 2s linear infinite;
+}
+
+.loading::before,
+.loading::after {
+   content: "";
+   width: 200px;
+   height: 200px;
+   position: absolute;
+   left: 0;
+   top: -10px;
+   box-sizing: border-box;
+   border-radius: 50%;
+}
+
+.loading::before {
+   border-top: 10px solid var(--rojo);
+   transform: rotate(120deg);
+}
+
+.loading::after {
+   border-top: 10px solid var(--verde);
+   transform: rotate(240deg);
+}
+
+.loading span {
+   position: absolute;
+   width: 200px;
+   height: 200px;
+   color: var(--grisPizarra);
+   text-align: center;
+   line-height: 200px;
+   animation: a2 2s linear infinite;
+}
+
+@keyframes a1 {
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+@keyframes a2 {
+   to {
+      transform: rotate(-360deg);
+   }
+}

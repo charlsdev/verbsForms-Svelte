@@ -1,0 +1,58 @@
+/* Variables CSS */
+:root {
+   --body-font: 'Poppins', sans-serif !important;
+   
+   --bodyColor: rgba(248, 248, 248, 0.5);
+   --rojoRosaBajo: #ff7979;
+   --amarilloAqua: #f5dd74;
+   --azulBajo: #7a9ef8;
+   --blanco: #fff;
+   --negro: #000;
+   --grisPizarra: #555;
+   --verde: #009345;
+   --rojo: #BE1D2D;
+   --amarillo: #FEDD14;
+   --rosado: #F7B8D5;
+   --morado: #7F3F96;
+   --grisLobo: #888;
+   --negroSuave: #333;
+   --azulCielo: #4158d0;
+   --verdeHoja: #04d357;
+   --rojoRosa: #fa4d4d;
+   --plomoPerla: #999;
+   --plomoOscuro: #515365;
+   --whiteLigth: #F4F0FA;
+   --azulMarino: #308eec;
+   --rojoEscarlata: #ee3434;
+   --rojoCereza: #ff6666;
+   --verdeBajo: #18a854;
+   --verdeHojaBajo: #2ecc71;
+   --verdeEsmeralda: #0e8b7d;
+}
+
+/* ?Diseño del Scroll */
+/* *Tamaño del scroll */
+*::-webkit-scrollbar {
+   width: 7px;
+}
+/* *Estilos barra (thumb) de scroll */
+*::-webkit-scrollbar-thumb {
+   background: var(--verdeEsmeralda);
+   border-radius: 4px;
+}
+*::-webkit-scrollbar-thumb:active {
+   background-color: var(--plomoPerla);
+}
+*::-webkit-scrollbar-thumb:hover {
+   background: var(--rojoRosaBajo);
+   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* *Estilos track de scroll */
+*::-webkit-scrollbar-track {
+   background: var(--bodyColor);
+   border-radius: 4px;
+}
+*::-webkit-scrollbar-track:hover,
+*::-webkit-scrollbar-track:active {
+   background: var(--blanco);
+}
